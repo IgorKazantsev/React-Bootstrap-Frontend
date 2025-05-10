@@ -1,12 +1,41 @@
-# React + Vite
+# React Trivia Quiz (Bootstrap + Vite)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a responsive quiz app built with **React**, **Vite**, and **React Bootstrap**. It loads trivia questions from the [Open Trivia API](https://opentdb.com/), includes a timer, and displays game statistics.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## Expanding the ESLint configuration
+- ✅ Load questions from Trivia API
+- ✅ Decode HTML entities in questions/answers
+- ✅ Answer validation with colored feedback (green/red)
+- ✅ Timer (15 seconds per question)
+- ✅ Auto-skip to next question on timeout
+- ✅ Show correct/incorrect stats at the end
+- ✅ Category and difficulty selection before starting
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## How to Run Locally
+
+```bash
+# Clone the repo
+git clone https://github.com/YOUR_USERNAME/react-bootstrap-frontend.git
+cd react-bootstrap-frontend
+
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
+
+src/
+├── components/
+│   ├── StartForm.jsx
+│   ├── QuizQuestion.jsx
+│   ├── QuestionTimer.jsx
+│   └── QuizResult.jsx
+├── utils/
+│   └── decodeHtml.js
+├── App.jsx
+└── main.jsx
